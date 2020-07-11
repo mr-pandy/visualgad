@@ -19,10 +19,16 @@
     <link rel="apple-touch-icon-precomposed" href="" />
 
   
+    <!-- Slick Slider -->
+    <link rel="stylesheet" type="text/css" href="/variant-ten/assets/slick/slick.css"/>
 
-    <!-- Global Style Links -->
+    <!-- Slick Slider theme -->
+    <link rel="stylesheet" href="/variant-ten/assets/slick/slick-theme.css" />
+
+    <!-- Bootstrap 4 CSS   -->
     <link rel="stylesheet" href="/variant-ten/assets/bootstrap-4.5.0-dist/css/bootstrap.min.css">
-     <!-- ADD YOUR CSS LINK -->
+
+     <!-- Custom Style Link -->
      <link rel="stylesheet" href="/variant-ten/styles.css">
 </head>
 <body>
@@ -63,11 +69,12 @@
            <!-- MOBILE NAV-BAR STARTS HERE-->
 
             <!-- Desktop Navbar -->
-            <nav class="navbar navbar-expand-sm pt-4"> 
+            <nav class="navbar navbar-expand-sm pt-4" id="mobNav"> 
                 <div class="container">
                     <a class="navbar-brand font-weight-bold" href="#">VISUALGAD</a>
-                    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"><img src="/variant-ten/assets/src/Vector.png" alt=""></span>
+                    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"><img src="/variant-ten/assets/src/Vector.png" alt="VISUALGAD Logo"><img src="/variant-ten/assets/src/close.png" class="d-none" alt=""></span>
                     </button>
                      <!-- Menu -->
                      <div class="collapse navbar-collapse" id="collapsibleNavId">
@@ -182,17 +189,17 @@
         <div class="row text-center">
             <div class="col-lg-6 col-md-12 col-sm-12 mb-4">
                 <div class="row ">
-                    <div class="col-12 mb-4 moment-1 ">
+                    <div class="col-12 mb-4 moment ">
                         <img src="/variant-ten/assets/src/m1.png" class="img-fluid" alt="">
                         <a href="#" class="m-play" > <img src="/variant-ten/assets/src/play.png" alt=""></a>
                     </div>
-                    <div class="col-12 mb-4 moment-2">
+                    <div class="col-12 mb-4 moment">
                         <img src="/variant-ten/assets/src/m2.png" class="img-fluid" alt="">
                        <a href="#" class="m-play" > <img src="/variant-ten/assets/src/play.png" alt=""></a>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-12 col-sm-12 mb-4 moment-3 ">
+            <div class="col-lg-6 col-md-12 col-sm-12 mb-4 moment ">
                 <img src="/variant-ten/assets/src/m3.png" class="img-responsive img-fluid"  alt="">
                 <a href="#" class="m-play" > <img src="/variant-ten/assets/src/play.png" alt=""></a>
             </div>
@@ -211,76 +218,94 @@
             <p class="spec-p">CLIENTS -</p>
             <h3 class="spec-h3 mb-5">Notable brands</h3>
 
-            <!--Carousel Wrapper-->
-            <div id="carousel-with-lb" class="carousel slide carousel-multi-item" data-ride="carousel">
-
-            <!--Indicators-->
-            <ol class="carousel-indicators ">
-            <li data-target="#carousel-with-lb" data-slide-to="0" class="active secondary-color mt-5"></li>
-            <li data-target="#carousel-with-lb" data-slide-to="1" class="secondary-color mt-5"></li>
-            </ol>
-            <!--/.Indicators-->
+            <!-- *** Slider Starts *** -->
+            <section class="slider">
+                <!-- Sliders -->
+                <div class="sliders">
+                <div class="row home-sliders">
+                    <!-- Slider Item 1 -->
+                    <div class="col-md-4 slider-item">
+                        <img src="/variant-ten/assets/src/nike.png" alt="Brand Logos" class="img-fluid slider-img"/>
+                    </div>
         
-            <!--Slides and lightbox-->
+                    <!-- Slider Item 2 -->
+                    <div class="col-md-4 slider-item">
+                        <img src="/variant-ten/assets/src/cocacola.png" alt="Brand Logos" class="img-fluid slider-img"/>
+                    </div>
         
-            <div class="carousel-inner mdb-lightbox" role="listbox">
-            <div id="mdb-lightbox-ui"></div>
-            <!--First slide-->
-            <div class=" carousel-item active text-center">
-                <figure class="col-lg-3 col-md-3 d-md-inline-block">
-                    <img src="/variant-ten/assets/src/nike.png"
-                    class="">
-                </figure>
-
-                <figure class="col-lg-3 col-md-3 d-md-inline-block">
-                    <img src="/variant-ten/assets/src/adidas.png"
-                    class="">
-                </figure>
-
-                <figure class="col-lg-3 col-md-3 d-md-inline-block">
-                    <img src="/variant-ten/assets/src/unicef.png"
-                    class="">
-                </figure>
-
-                <!-- <figure class="col-lg-3 col-md-3 d-md-inline-block">
-                    <img src="/variant-ten/assets/src/nike.png"
-                    class="">
-                </figure> -->
-            </div>
-            <!--/.First slide-->
+                    <!-- Slider Item 3 -->
+                    <div class="col-md-4 slider-item">
+                        <img src="/variant-ten/assets/src/unicef.png" alt="Brand Logos" class="img-fluid slider-img"/>
+                    </div>
         
-            <!--Second slide-->
-            <div class="carousel-item text-center">
-                <figure class="col-md-3 d-md-inline-block">
-                    <img src="/variant-ten/assets/src/cocacola.png"
-                    class="img-fluid">
-                </figure>
-
-                <figure class="col-md-3 d-md-inline-block">
-                    <img src="/variant-ten/assets/src/nike.png"
-                    class="img-fluid">
-                </figure>
-
-                <figure class="col-md-3 d-md-inline-block">
-                    <img src="/variant-ten/assets/src/nike.png"
-                    class="img-fluid">
-                </figure>
-
-                <!-- <figure class="col-md-3 d-md-inline-block">
-                    <img src="/variant-ten/assets/src/nike.png"
-                    class="img-fluid">
-                </figure> -->
-                
+                    <!-- Slider Item 4 -->
+                    <div class="col-md-4 slider-item">
+                        <img src="/variant-ten/assets/src/nba.png" alt="Brand Logos" class="img-fluid slider-img"/>
+                    </div>
         
-            </div>
-            <!--/.Second slide-->
-            </div>
-            <!--/.Slides-->
+                    <!-- Slider Item 5 -->
+                    <div class="col-md-4 slider-item">
+                        <img src="/variant-ten/assets/src/nike.png" alt="Brand Logos" class="img-fluid slider-img"/>
+                    </div>
+
+                    <!-- Slider Item 6 -->
+                    <div class="col-md-4 slider-item">
+                        <img src="/variant-ten/assets/src/adidas.png" alt="Brand Logos" class="img-fluid slider-img"/>
+                    </div>
+
+                </div>
         
-            </div>
-            <!--/.Carousel Wrapper-->
-
-
+                <!-- Indicators -->
+                <!-- <div class="row">
+                    <div class="col-md-3 ml-auto">
+                    <img
+                        src="/variant-ten/assets/src/icons/prev.svg"
+                        alt="Indicator"
+                        class="indicator-btn prev-btn"
+                    />
+                    <img
+                        src="/variant-ten/assets/src/icons/next.svg"
+                        alt="Indicator"
+                        class="indicator-btn next-btn"
+                    />
+                    </div>
+                </div> -->
+                </div>
+        
+                <div class="sliders mobile-sliders">
+                    <div class="row">
+                        <!-- Slider Item 1 -->
+                        <div class="col-md-4 slider-item">
+                            <img src="/variant-ten/assets/src/nike.png" alt="Brand Logos" class="img-fluid slider-img"/>
+                        </div>
+            
+                        <!-- Slider Item 2 -->
+                        <div class="col-md-4 slider-item my-3 my-md-0">
+                            <img src="/variant-ten/assets/src/cocacola.png" alt="Brand Logos" class="img-fluid slider-img"/>
+                        </div>
+            
+                        <!-- Slider Item 3 -->
+                        <div class="col-md-4 slider-item">
+                            <img src="/variant-ten/assets/src/unicef.png" alt="Brand Logos" class="img-fluid slider-img"/>
+                        </div>
+                        
+                    </div>
+        
+                    <!-- Indicators -->
+                    <div class="row">
+                        <div class="col-md-12 text-right">
+                        <a href="#" class="link mr-3 mt-2 d-block"
+                            >See More
+                            <img
+                            src="/variant-ten/assets/src/icons/tick-arrow-right.svg"
+                            class="icon"
+                            alt="Icon"
+                        /></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Slider End -->
 
         </div>
     </section>
@@ -373,10 +398,16 @@
     <footer class="text-center mt-5 p-4">
         <p>© DESIGNED WITH 🍗 & ❤</p>
     </footer>
-    <!-- Boostrap JS Links -->
-    <script src="/variant-ten/index.js"></script>
+    
+    <!-- jQuery -->
     <script src="/variant-ten/assets/bootstrap-4.5.0-dist/js/jquery.min.js"></script>
+    <!-- Popper -->
     <script src="/variant-ten/assets/bootstrap-4.5.0-dist/js/popper.min.js"></script>
+    <!-- Boostrap JS Links -->
     <script src="/variant-ten/assets/bootstrap-4.5.0-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Slick js -->
+    <script type="text/javascript" src="/variant-ten/assets/slick/slick.min.js"></script>
+    <!-- Custom Js -->
+    <script src="/variant-ten/index.js"></script>
 </body>
 </html>

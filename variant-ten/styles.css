@@ -1,10 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 :root{
     --black-color:  #091213;
     --yellow-color: #EFC518;
     --white-color:  #FEFCF3;
     --deep-black: #000000;
     --border-bottom: 1px solid #EFC518;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Lato', sans-serif !important;
+    scroll-behavior: smooth;
+    background: var(--black-color);
+    overflow-x: hidden;
 }
 #photographerImg,#photographerInfo,
 #portfolio,#brand,
@@ -56,21 +65,14 @@ footer{
     line-height: 41px;
     color: var(--white-color);
 }
-html,body{
-    width: 100%;
-    height: 100%;
-    font-family: 'Lato', sans-serif !important;
-    scroll-behavior: smooth;
-    background: var(--black-color);
-    overflow-x: hidden;
-}
+
 /* Header */
 .mob{
     background: var(--yellow-color) !important;
 }
 .mob a{
     color: var(--deep-black) !important;
-    font-weight: bold;
+    font-weight: bold !important;
 }
 header .navbar-brand{
     color: var(--yellow-color) !important;
@@ -113,6 +115,10 @@ header ul .active{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+#moments .moment:hover{
+    transform: scale(1.05);
+    transition: 2s ease-in-out 0.5s;
 }
 /* Contact */
 #contact textarea{
@@ -199,3 +205,55 @@ footer{
         width: 75%;
     }
 }
+
+/* Carousel */
+/* *** Slider Styling *** */
+.slider {
+    margin-bottom: 4rem;
+    overflow-x: hidden;
+  }
+  
+  .slider-item {
+    position: relative;
+  }
+  
+  .slider-img {
+    width: 100%;
+    /* height: 400px; */
+  }
+  
+
+  .indicator-btn {
+    margin: 1rem 2rem;
+    width: 40px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .indicator-btn:active {
+    transform: translateX(5px);
+  }
+  
+  .slick-slider {
+    cursor: grab;
+  }
+  
+  /* Mobile Sliders */
+  .mobile-sliders {
+    display: none;
+  }
+  
+  .mobile-sliders .link {
+    color: var(--yellow-color);
+    font-size: 0.8rem;
+    transition: all 0.3s ease;
+  }
+  
+  .mobile-sliders .link:hover {
+    text-decoration: none;
+    color: var(--secondary-color);
+  }
+  
+  .mobile-sliders .link:hover img {
+    transform: translateX(3px);
+  }
